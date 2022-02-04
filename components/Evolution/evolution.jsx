@@ -4,7 +4,7 @@ import EvolutionLine from './EvolutionLine'
 
 import {mareep} from './mareep'
 
-const evolution = () => {
+const Evolution = () => {
     const [level, setLevel] = useState(0)
     const [start, setStart] = useState(false);
     const [pokemon, setPokemon] = useState(0)
@@ -18,7 +18,7 @@ const evolution = () => {
      
         }, 300);
         return () => clearInterval(interval);
-      }, [start, pokemon]);
+      }, [start, pokemon, level]);
     
     
     const restart = () => {
@@ -47,4 +47,4 @@ const evolution = () => {
     )
 }
 
-export default evolution;
+export default Evolution;

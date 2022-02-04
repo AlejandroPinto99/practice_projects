@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Entry = ({menu, legendary}) => {
     return(
@@ -6,7 +7,7 @@ const Entry = ({menu, legendary}) => {
         transform duration-300 ease-linear ${menu ? '-rotate-20' : 'rotate-0'}`} style={{backgroundColor: `${legendary.bg_color}`}}>
             <div className="flex flex-col items-center">
                 <h1 className="text-center text-lg mt-8">{legendary.name}</h1>
-                <img src={legendary.image} heigth={300} width={250} alt="moltres" />
+                <Image src={legendary.image} heigth={300} width={250} alt="moltres" />
             </div>
            
             <div className=" mx-12">

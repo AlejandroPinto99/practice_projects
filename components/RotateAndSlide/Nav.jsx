@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Nav = ({legendaries, setLegendary, setMenu}) => {
 
@@ -11,8 +12,8 @@ const Nav = ({legendaries, setLegendary, setMenu}) => {
         <div className="">
            {
                 legendaries.map((item, index) => (
-                <div className=" hover:animate-bounce">
-                    <img key={index} 
+                <div className=" hover:animate-bounce" key={index}>
+                    <Image key={index} 
                     className="cursor-pointer" 
                     src={item.sprite} 
                     height={75} 
