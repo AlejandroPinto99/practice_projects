@@ -1,0 +1,61 @@
+/*Card Container*/
+.cards_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Page Title and subtitle*/
+.title_style{
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 7px;
+}
+
+.title_style > h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.title_style > p {
+    font-size: 1.5rem;
+}
+
+/*Card Styling*/
+.card_style{
+    transition: all;
+    transition-duration: 700ms;
+    width: 200px;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.card_style > p{
+    opacity: 0%;
+}
+
+.card_style_selected > p {
+    opacity: 70%;
+    background-color: black;
+}
+
+.card_style_selected{
+    transition: all;
+    transition-duration: 700ms;
+    width: 350px;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.region_text{
+    transition: all;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}

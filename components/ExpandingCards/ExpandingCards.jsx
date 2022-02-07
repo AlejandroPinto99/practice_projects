@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import CardStyle from './ExpandingStyle.module.css'
 
 //Components
 import Card from './Card';
@@ -8,12 +9,11 @@ const ExpandingCards = () => {
 
     return(
         <div>
-            <div className="text-center mt-2 mb-4">
-                <h1 className="font-bold text-2xl">Pokemon Regions</h1>
-                <p className="text-sm">The best places to take your vacations!</p>
+            <div className={CardStyle.title_style}>
+                <h1 >Pokemon Regions</h1>
+                <p >The best places to take your vacations!</p>
             </div>
-            <div className="flex flex-col items-center space-y-4 mx-2
-                            md:flex-row md:justify-center md:space-y-0 md:space-x-2 md:h-full">
+            <div className={CardStyle.cards_container}>
                 <Card   name="Kanto" 
                         imgUrl="https://i.pinimg.com/564x/36/89/8c/36898c0cc6b30840bb4dea99d84e9e2c.jpg" 
                         onClick={() => setSelected("Kanto")}
