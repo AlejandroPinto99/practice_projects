@@ -6,27 +6,28 @@ import ExpandingCardsImg from '../images/expandingCards.png';
 import ProgressBar from '../images/progressBar.png';
 import RotateMenu from '../images/RotateMenu.png';
 import Hidden from '../images/HiddenSearch.png';
+import Evolution from '../images/Evolution.png';
+
+import HomeStyle from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
     <div> 
-      <div className="text-center">
-          <h1 className="text-5xl mb-4">Interesting example components for websites!</h1>
+      <div className={HomeStyle.home_title_container}>
+          <h1>Interesting example components for websites!</h1>
           <p>With Pokemon Thematic!! </p>
       </div>
-      <div>
-
-      </div>
-      <div className="grid grid-cols-4">
+  
+      <div className={HomeStyle.components_container}>
           <Link href="/expanding_cards" >
-            <div className="mt-8 mx-4 flex flex-col items-center cursor-pointer border-2 shadow-lg pb-2">
+            <div className={HomeStyle.card}>
               <p>Expanding Cards</p>
               <Image src={ExpandingCardsImg} height={125} width={200} />
             </div>
           </Link>
 
           <Link href="/progress_bar" >
-            <div className="mt-8 mx-4 flex flex-col items-center cursor-pointer border-2 shadow-lg pb-2">
+            <div className={HomeStyle.card}>
               <p>Progress Bar</p>
               <Image src={ProgressBar} height={125} width={200} />
             </div>
@@ -34,16 +35,23 @@ const Home: NextPage = () => {
 
           
           <Link href="/rotate_&_slide" >
-            <div className="mt-8 mx-4 flex flex-col items-center cursor-pointer border-2 shadow-lg pb-2">
+            <div className={HomeStyle.card}>
               <p>Rotate Menu</p>
               <Image src={RotateMenu} height={125} width={200} />
             </div>
           </Link>
 
           <Link href="/hidden_search" >
-            <div className="mt-8 mx-4 flex flex-col items-center cursor-pointer border-2 shadow-lg pb-2">
+            <div className={HomeStyle.card}>
               <p>Hidden Search</p>
               <Image src={Hidden} height={125} width={200} />
+            </div>
+          </Link>
+
+          <Link href="/evolution" >
+            <div className={HomeStyle.card}>
+              <p>Evolution Progress</p>
+              <Image src={Evolution} height={125} width={200} />
             </div>
           </Link>
       </div>

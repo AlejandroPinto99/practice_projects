@@ -9,7 +9,7 @@ const Nav = ({legendaries, setLegendary, setMenu}) => {
     }
 
     return(
-        <div className="">
+        <div >
            {
                 legendaries.map((item, index) => (
                 <div className=" hover:animate-bounce" key={index}>

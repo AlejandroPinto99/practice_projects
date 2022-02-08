@@ -1,0 +1,28 @@
+.search_container{
+    display: flex;
+    background-color: #b91c1c;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_container > input {
+    outline-width: 0px;
+    transition: all 200ms ease-in-out;
+}
+
+.search_container > div{
+    background-color: white;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.open{
+    padding: 8px;
+    width: 200px;
+}
+
+.close{
+    padding: 0px;
+    width: 0px;
+}
