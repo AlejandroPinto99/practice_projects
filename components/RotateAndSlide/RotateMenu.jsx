@@ -1,14 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
 
+import RotateStyle from './Rotate.module.css'
+
 const RotateMenu = ({menu, setMenu, legendary}) => {
     return(
-        <div    className="bg-blue-400 rounded-full max-w-max p-14 relative z-10 cursor-pointer "
-                style={{backgroundColor: `${legendary.btn_color}`}}
-                onClick={() => setMenu(!menu)}>
-            <Image src={legendary.icon} 
-            height={50} width={50} alt="fire" 
-            className="absolute bottom-4 right-4"/>
+        <div className={RotateStyle.rotate_btn}
+            style={{backgroundColor: `${legendary.btn_color}`}}
+            onClick={() => setMenu(!menu)}>
+            <div >
+                <Image src={legendary.icon} 
+                height={100} width={100} alt="fire"/>
+            </div>
+           
         </div>
     )
 }

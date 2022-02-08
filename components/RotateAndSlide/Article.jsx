@@ -4,6 +4,9 @@ import Entry from './Entry'
 import RotateMenu from './RotateMenu'
 import Nav from './Nav'
 
+//Styles
+import RotateStyle from './Rotate.module.css'
+
 import {LegendaryBirds}  from './LegendaryTrios'
 
 const Article = () => {
@@ -16,11 +19,11 @@ const Article = () => {
             backgroundSize: 'cover', 
             backgroundRepeat: 'no-repeat',
         }}>
-            <div className="absolute -top-8 -left-10">
+            <div className={RotateStyle.menu_container}>
                 <RotateMenu menu={menu} setMenu={setMenu} legendary={legendary} />
             </div>
             <Entry menu={menu} legendary={legendary}/>
-            <div className={`absolute bottom-4 transition ease-in-out  ${ menu ? 'delay-300 translate-x-6': '-translate-x-20'}`}>
+            <div className={`${RotateStyle.nav_btn_container} ${ menu ? RotateStyle.nav_showed : RotateStyle.nav_hidden}`}>
                 <Nav legendaries={LegendaryBirds} setLegendary={setLegendary} setMenu={setMenu}/>
             </div>
         </div>
