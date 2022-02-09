@@ -1,0 +1,40 @@
+.pokedex_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.pokeCard{
+    margin: 2rem 2rem;
+    padding: 2rem 2rem;
+    border-width: 5px;
+    background-color: beige;
+    border-radius: 25px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    transform: translateX(600%);
+    transition: all 400ms ease;
+}
+
+.pokeCard:nth-of-type(even){
+    transform: translateX(-600%);
+}
+
+.pokeCard.show{
+    transform: translateX(0);
+}
+
+.pokeCard > h1{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pokeCard > div {
+    background-color: white;
+    margin: 10px 0px;
+    border-radius: 25px;
+}
+
+
