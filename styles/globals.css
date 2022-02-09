@@ -5,3 +5,12 @@
 body {
     overflow-x: hidden;
 }
+
+:root {
+    --left-bg-color: rgba(236, 102, 84, 0.5);
+    --right-bg-color: rgba(84, 175, 236, 0.5);
+    --left-btn-hover-color: rgba(236, 82, 84, 1);
+    --right-btn-hover-color: rgba(84, 125, 236, 1);
+    --hover-width: 75%;
+    --other-width: 25%;
+}

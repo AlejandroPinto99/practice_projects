@@ -12,7 +12,6 @@ const Pokedex = () => {
 
     if(process.browser){
         const cards = document.querySelectorAll('.Pokedex_pokeCard__8_HG0');
-     
         window.addEventListener('scroll', checkCards);
 
         checkCards();
@@ -20,22 +19,16 @@ const Pokedex = () => {
         function checkCards(){
             const triggerBottom = window.innerHeight / 5 * 4;
 
-            console.log("entrando a checkCards")
-
             cards.forEach(card => {
                 const cardTop = card.getBoundingClientRect().top;
 
                 if(cardTop < triggerBottom) {
                     card.classList.add('Pokedex_show__AiHTb');
-                    console.log("agregando")
                 } else {
                     card.classList.remove('Pokedex_show__AiHTb')
-                    console.log("quitando")
                 }
             })
         }
-
-        console.log("cards", cards)
     } 
 
 

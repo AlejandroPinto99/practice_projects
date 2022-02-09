@@ -14,7 +14,7 @@
     border-radius: 25px;
     box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
     transform: translateX(600%);
-    transition: all 400ms ease;
+    transition: transform 300ms ease;
 }
 
 .pokeCard:nth-of-type(even){
