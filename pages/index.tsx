@@ -9,6 +9,7 @@ import Hidden from '../images/HiddenSearch.png';
 import Evolution from '../images/Evolution.png';
 import Pokedex from '../images/pokedexCards.png';
 import SplitScreen from '../images/SplitScreen.png';
+import Login from '../images/loginAnimation.png';
 
 import HomeStyle from '../styles/Home.module.css'
 
@@ -66,6 +67,12 @@ const Home: NextPage = () => {
             <div className={HomeStyle.card}>
               <p>Split Landpage</p>
               <Image src={SplitScreen} height={125} width={200} />
+            </div>
+          </Link>
+          <Link href="/login" >
+            <div className={HomeStyle.card}>
+              <p>Login Animation</p>
+              <Image src={Login} height={125} width={200} />
             </div>
           </Link>
       </div>

@@ -17,8 +17,6 @@ const Pokedex = () => {
           
             checkCards();
     
-            console.log("Cards", cards);
-    
             function checkCards(){
                 const triggerBottom = window.innerHeight / 5 * 4;
     
