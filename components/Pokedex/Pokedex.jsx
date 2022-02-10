@@ -7,29 +7,34 @@ const Pokedex = () => {
 
     useEffect(() => {
         GetPokemonList();
-    }, [])
+    }, []);
 
-
-    if(process.browser){
-        const cards = document.querySelectorAll('.Pokedex_pokeCard__8_HG0');
-        window.addEventListener('scroll', checkCards);
-
-        checkCards();
-
-        function checkCards(){
-            const triggerBottom = window.innerHeight / 5 * 4;
-
-            cards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
-
-                if(cardTop < triggerBottom) {
-                    card.classList.add('Pokedex_show__AiHTb');
-                } else {
-                    card.classList.remove('Pokedex_show__AiHTb')
-                }
-            })
-        }
-    } 
+    useEffect(() => {
+        if(process.browser ){
+       
+            const cards = document.querySelectorAll('.Pokedex_pokeCard__8_HG0');
+            window.addEventListener('scroll', checkCards);
+          
+            checkCards();
+    
+            console.log("Cards", cards);
+    
+            function checkCards(){
+                const triggerBottom = window.innerHeight / 5 * 4;
+    
+                cards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+    
+                    if(cardTop < triggerBottom) {
+                        card.classList.add('Pokedex_show__AiHTb');
+                    } else {
+                        card.classList.remove('Pokedex_show__AiHTb')
+                    }
+                })
+            } 
+        } 
+    }, [list])
+    
 
 
     async function GetPokemonList() {

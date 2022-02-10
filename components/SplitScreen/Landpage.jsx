@@ -13,7 +13,7 @@ const Landpage = () => {
 
         console.log("Left: ", left, " Right: ", right, " container: ", container);
 
-      left.addEventListener('mouseenter', () => container.classList.add('Landpage_hover_left__0wlEz'));
+        left.addEventListener('mouseenter', () => container.classList.add('Landpage_hover_left__0wlEz'));
         left.addEventListener('mouseleave', () => container.classList.remove('Landpage_hover_left__0wlEz'));
         right.addEventListener('mouseenter', () => container.classList.add('Landpage_hover_right__ouaYN'));
         right.addEventListener('mouseleave', () => container.classList.remove('Landpage_hover_right__ouaYN'));

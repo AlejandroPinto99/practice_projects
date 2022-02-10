@@ -7,6 +7,8 @@ import ProgressBar from '../images/progressBar.png';
 import RotateMenu from '../images/RotateMenu.png';
 import Hidden from '../images/HiddenSearch.png';
 import Evolution from '../images/Evolution.png';
+import Pokedex from '../images/pokedexCards.png';
+import SplitScreen from '../images/SplitScreen.png';
 
 import HomeStyle from '../styles/Home.module.css'
 
@@ -52,6 +54,18 @@ const Home: NextPage = () => {
             <div className={HomeStyle.card}>
               <p>Evolution Progress</p>
               <Image src={Evolution} height={125} width={200} />
+            </div>
+          </Link>
+          <Link href="/pokedex_cards" >
+            <div className={HomeStyle.card}>
+              <p>Pokedex</p>
+              <Image src={Pokedex} height={125} width={200} />
+            </div>
+          </Link>
+          <Link href="/split_screen" >
+            <div className={HomeStyle.card}>
+              <p>Split Landpage</p>
+              <Image src={SplitScreen} height={125} width={200} />
             </div>
           </Link>
       </div>
