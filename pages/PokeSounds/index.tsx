@@ -41,7 +41,7 @@ const PokeSounds : NextPage = () => {
     }
 
     async function GetOptions() {
-        const json = [];
+        const json : any = [] ;
         for(let i = 0; i <= 3; i++ ){
             const res = await fetch(
                 `https://pokeapi.co/api/v2/pokemon/${Math.round(Math.random()*(151 - 1))}`
@@ -51,7 +51,7 @@ const PokeSounds : NextPage = () => {
             
         }
 
-        setOptions(json)
+      setOptions(json)
     }
 
     return(
