@@ -11,6 +11,7 @@ import Pokedex from '../images/pokedexCards.png';
 import SplitScreen from '../images/SplitScreen.png';
 import Login from '../images/loginAnimation.png';
 import PokeSounds from '../images/PokeSounds.png';
+import OaksJokes from '../images/Jokes.png';
 
 import HomeStyle from '../styles/Home.module.css'
 
@@ -80,6 +81,12 @@ const Home: NextPage = () => {
             <div className={HomeStyle.card}>
               <p>PokeSounds</p>
               <Image src={PokeSounds} height={125} width={200} />
+            </div>
+          </Link>
+          <Link href="/profesorJokes" >
+            <div className={HomeStyle.card}>
+              <p>Oak's jokes</p>
+              <Image src={OaksJokes} height={125} width={200} />
             </div>
           </Link>
       </div>
